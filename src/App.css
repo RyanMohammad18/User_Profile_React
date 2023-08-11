@@ -1,0 +1,234 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 100px;
+  border-bottom: 1px solid rgb(224, 222, 222);
+}
+.logo {
+  display: flex;
+  margin-left: 5%;
+  height: 100%;
+  align-items: center;
+  font-size: xx-large;
+  cursor: pointer;
+
+  width: 50%;
+}
+.profile {
+  display: flex;
+
+  width: 50%;
+  margin: auto;
+  justify-content: right;
+  margin-right: 20px;
+  height: 100%;
+}
+
+.regular-bell-icon {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.bell {
+  width: 30px;
+  height: 30px;
+}
+.img1 {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+}
+
+.dropdown {
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  display: flex; /* Use flexbox for left and right divs */
+  flex-wrap: wrap; /* Prevent wrapping of flex items */
+}
+
+.left {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  border-right: 1px solid rgb(224, 222, 222);
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  font-size: larger;
+}
+
+.icon-container2 {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  color: orangered;
+  font-size: large;
+}
+
+.icon-container p {
+  padding: 0.5rem;
+}
+
+.icon-container:first-child {
+  border-right: 3px solid rgb(223, 108, 66);
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  margin: 3%;
+  margin-left: 15%;
+  height: 100%;
+
+  flex-direction: row;
+  width: 100%;
+}
+.right img {
+  border-radius: 50%;
+  height: 150px;
+}
+.right .text {
+  margin-top: 40px;
+  margin-left: 50px;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: x-large;
+  color: #212529;
+  line-height: 10%;
+}
+.name2 {
+  font-size: small;
+}
+
+.input-content {
+  margin-top: 50px; /* Add spacing between .right and .input-content */
+  display: flex;
+  margin-right: 100px;
+  position: relative;
+  justify-content: left;
+  align-items: start;
+}
+
+.input1 {
+  margin-right: 20%;
+  position: relative;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: #fffcfc;
+  border-radius: 10px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+.inputbtn {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.btn {
+  padding: 1em 3rem;
+  background-color: rgb(255, 102, 0);
+  border-radius: 10px;
+  color: white;
+  border-style: none;
+
+  box-shadow: 0 3px 7px rgb(255, 102, 0);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .logo {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    font-size: large;
+  }
+
+  .profile {
+    width: 100%;
+    margin: 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .right img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .right .text {
+    margin-top: 20px;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .input-content {
+    margin-top: 30px;
+  }
+
+  .right {
+    display: flex;
+    width: 100%;
+    border-style: none;
+    flex-direction: column;
+  }
+
+  input {
+    width: 100px;
+    height: 50px;
+  }
+}
